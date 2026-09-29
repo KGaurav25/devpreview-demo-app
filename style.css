@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0f172a;
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.card {
+    background: #1e293b;
+    border-radius: 20px;
+    padding: 50px 40px;
+
+    text-align: center;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #94a3b8;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #14532d;
+    color: #bbf7d0;
+
+    padding: 10px 18px;
+    border-radius: 50px;
+
+    font-size: 15px;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+
+    background: #22c55e;
+    border-radius: 50%;
+}
+
+.message {
+    max-width: 600px;
+
+    margin: 25px auto;
+
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+.pipeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    margin: 35px 0;
+}
+
+.step {
+    background: #334155;
+
+    padding: 15px 20px;
+
+    border-radius: 12px;
+
+    min-width: 100px;
+}
+
+.step span {
+    display: block;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.step p {
+    color: #cbd5e1;
+}
+
+.arrow {
+    font-size: 25px;
+    color: #64748b;
+}
+
+button {
+    border: none;
+
+    background: #2563eb;
+    color: white;
+
+    padding: 13px 25px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#result {
+    margin-top: 20px;
+
+    color: #22c55e;
+
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+
+    .card {
+        padding: 35px 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .pipeline {
+        flex-direction: column;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+}
